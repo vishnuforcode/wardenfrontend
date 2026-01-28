@@ -45,7 +45,7 @@ const WardenPostStatusCard = ({ post }) => {
         <form onSubmit={async (e) => {
           e.preventDefault();
           const res = await axios.patch(
-            `http://localhost:8000/warden/updateStatus/post/${post._id}`,
+            `https://hostelmanagerbackend.onrender.com/warden/updateStatus/post/${post._id}`,
             { status },
             { withCredentials: true }
           );
