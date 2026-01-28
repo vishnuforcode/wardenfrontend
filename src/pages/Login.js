@@ -24,7 +24,7 @@ function Login() {
     e.preventDefault()
     try {
       const res = await axios.post(
-        'http://localhost:8000/login',
+        'https://hostelmanagerbackend.onrender.com/login',
         formData,
         { withCredentials: true }
       )

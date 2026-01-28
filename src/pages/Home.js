@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.get("http://localhost:8000/home", { withCredentials: true })
+        const data = await axios.get("https://hostelmanagerbackend.onrender.com/home", { withCredentials: true })
         setPosts(data.data)
       } catch (err) {
         if (err.response && err.response.status === 401) {

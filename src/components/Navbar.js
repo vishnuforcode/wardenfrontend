@@ -10,7 +10,7 @@ function Navabr() {
 
   const handleLogOut = async () => {
     try {
-      await axios.get("http://localhost:8000/logout", { withCredentials: true })
+      await axios.get("https://hostelmanagerbackend.onrender.com/logout", { withCredentials: true })
       localStorage.setItem("currentAuth", JSON.stringify(false))
 
       // toast

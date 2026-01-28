@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
 
   try {
     const payload = { ...postData, tillTime: tillDate };
-    await axios.post('http://localhost:8000/post', payload, { withCredentials: true });
+    await axios.post('https://hostelmanagerbackend.onrender.com/post', payload, { withCredentials: true });
 
     const toast = new Toast(toastRef.current);
     toast.show();

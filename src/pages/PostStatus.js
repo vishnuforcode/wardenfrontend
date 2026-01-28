@@ -9,7 +9,7 @@ function PostStatus() {
 
   useEffect(() => {
     const getSinglePost = async () => {
-      const res = await axios.get(`http://localhost:8000/post/${params.id}`, {
+      const res = await axios.get(`https://hostelmanagerbackend.onrender.com/post/${params.id}`, {
         withCredentials: true
       })
       setPost(res.data)

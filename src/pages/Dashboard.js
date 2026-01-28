@@ -10,7 +10,7 @@ function Dashboard() {
   useEffect(() => {
     const getAllPosts = async () => {
       const res = await axios.get(
-        "http://localhost:8000/home",
+        "https://hostelmanagerbackend.onrender.com/home",
         { withCredentials: true }
       )
       setPosts(res.data)

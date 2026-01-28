@@ -23,17 +23,17 @@ function Register() {
   console.log();
   
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault()
-//     try {
-//       await axios.post('http://localhost:8000/register', formData)
-//       // Navigate to login after registration
-//       navigate('/warden/login')
-//       console.log(formData)
-//     } catch (err) {
-//       console.log({ err })
-//     }
-//   }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post('https://hostelmanagerbackend.onrender.com/register', formData)
+      // Navigate to login after registration
+      navigate('/warden/login')
+      console.log(formData)
+    } catch (err) {
+      console.log({ err })
+    }
+  }
 
   return (
     <>
