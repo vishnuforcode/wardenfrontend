@@ -79,7 +79,7 @@ function Navabr() {
               {isAuth ? (
                 <>
                   <li className="nav-item">
-                    <Link className="nav-link btn btn-primary btn-sm px-3" to="/post">
+                    <Link className="nav-link btn btn-primary btn-sm px-3" to="/warden/post">
                       Create Post
                     </Link>
                   </li>
