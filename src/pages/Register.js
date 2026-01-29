@@ -51,7 +51,7 @@ function Register() {
             <h2 className="fw-bold text-center mb-3 text-primary">Create Account</h2>
             <p className="text-center text-muted small mb-4">Register to start using the app</p>
 
-            <form >
+            <form onSubmit={handleSubmit} >
               <div className="mb-3">
                 <label className="form-label small text-muted">Username</label>
                 <input
